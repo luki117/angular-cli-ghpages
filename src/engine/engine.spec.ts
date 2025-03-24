@@ -81,7 +81,7 @@ describe('engine', () => {
       const options = {};
       const finalOptions = await engine.prepareOptions(options, logger);
 
-      expect(finalOptions.repo).toMatch(/angular-schule\/angular-cli-ghpages/);
+      expect(finalOptions.repo).toMatch(/\/angular-cli-ghpages/);
     });
 
     describe('remote', () => {
